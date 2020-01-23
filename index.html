@@ -1,1 +1,114 @@
-<h1>Aviva</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #canvas{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 10vh;
+            font-family: 'Open Sans', Arial;
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+            opacity: 0.7;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <canvas height="900" width="1400" id="canvas"></canvas>
+        <h1>Avivah Church</h1>
+    </div>
+
+    <script>
+        let canvas = document.querySelector('#canvas');
+        let context = canvas.getContext('2d');
+
+        function Particle (options) 
+        {
+        this.startX = options.x;
+        this.startY = options.y;
+        this.reset();
+        Object.assign(this, options);
+        }
+
+        Particle.prototype.reset = function () 
+        {
+        
+        this.x = this.startX;
+        this.y = this.startY;
+        this.vy = Math.random() * 10 - 5;
+        this.vx = Math.random() * 10 - 5;
+        this.size = Math.random() * 2.5;
+        }
+
+        Particle.prototype.draw = function (context) 
+        {  
+        context.beginPath();
+        context.fillStyle = this.color;
+        this.x += this.vx;
+        this.y += this.vy;
+        context.arc(this.x, this.y, this.size, 0, Math.PI * 2, true);
+        context.closePath();
+        context.fill();
+        
+        // melhorar isso, o "canvas" vem do global, isso não tá legal
+        if (this.y > canvas.height || this.y < 0) this.reset();
+        }
+
+        const colors = ['#fff', 'rgba(255,255,255,0.7)', 'rgba(255,255,255,0.3)'];
+
+        const particles = Array.from({length: 100}).map((_, index) => {
+        return new Particle({
+            y: canvas.height / 2,
+            x: canvas.width / 2,
+            color: colors[index % colors.length]
+        })
+        });
+
+        setInterval(function() {
+        // isso remove o efeito de blur
+        // context.clearRect(0,0,canvas.width, canvas.height);
+        
+        // com opacity fica o "blur motion"
+        context.fillStyle = 'rgba(0, 0, 0, .7)';
+        context.fillRect(0,0,canvas.width, canvas.height);
+        
+        particles.forEach(p => p.draw(context));
+        }, 30)
+    </script>
+</body>
+</html>
