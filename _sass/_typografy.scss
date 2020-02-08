@@ -1,0 +1,32 @@
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+
+h2{
+    font-size: 2rem;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+
+    &.is-small{
+        width: 600px;
+    }
+}
+
+
+.section{
+    padding: 3rem 2rem;
+}
