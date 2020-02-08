@@ -1,3 +1,8 @@
+// 
+
+// aligns
+
+
 .text-center{
     text-align: center;
 }
@@ -11,10 +16,39 @@
 }
 
 
+// globals
+
+h1{
+    font-size: 2.5rem;
+}
+
 h2{
     font-size: 2rem;
 }
 
+h3{
+    font-size: 1.8rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+@for $i from 1 through 6 {
+    h#{$i}{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+p{
+    margin: 10px 0;
+}
+
+
+
+// containers
 
 .container{
     margin: 0 auto;

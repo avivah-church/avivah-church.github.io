@@ -6,10 +6,7 @@ layout: default
 
 <header class="main-header">
     <nav class="nav-header">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/contato">Contato</a></li>
-        </ul>
+        {% include navbar.html %}
     </nav>
     <div class="main-header-content">
         <img class="logo" src="/assets/img/logo.png" height="250">
@@ -18,8 +15,15 @@ layout: default
 </header>
 
 <section class="section">
+    <div class="container text-center">
+        <h2>A {{ site.title | upcase }} LOREM IPSUM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Debitis sapiente velit vitae quaerat voluptatum<br> maxime fugiat totam nostrum quidem ducimus?</p>
+    </div>
+</section>
+
+<section class="section">
     <div class="container is-small text-center">
-        <h2>A AVIAH CHURCH TEM LOREM IPSUM</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Debitis sapiente velit vitae quaerat voluptatum maxime fugiat totam nostrum quidem ducimus?</p>
+        <h2>CONTATO</h2>
+        <p>Entre em contato conosco através do e-mail {{ site.email }}</p>
     </div>
 </section>
