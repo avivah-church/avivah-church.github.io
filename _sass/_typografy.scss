@@ -2,19 +2,12 @@
 
 // aligns
 
-
-.text-center{
-    text-align: center;
+@each $name in ("right", "left", "center", "justify")
+{
+    .text-#{$name}{
+        text-align: #{$name};
+    }
 }
-
-.text-right{
-    text-align: right;
-}
-
-.text-left{
-    text-align: left;
-}
-
 
 // globals
 
