@@ -13,7 +13,7 @@ permalink: /pregacoes
             {% for video in site.data.videos %}
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="video">
-                    <iframe src="{{ video.link }}?showinfo=0" allowfullscreen frameborder="0" height="250"></iframe>
+                    <iframe class="img-responsive" src="{{ video.link }}?showinfo=0" allowfullscreen frameborder="0" height="250" width="100%"></iframe>
                 </div>
             </div>
             {% endfor %}
