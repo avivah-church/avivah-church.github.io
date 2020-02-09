@@ -1,0 +1,17 @@
+<header class="main-header" style='background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{ include.background_image }}")'>
+    <nav class="nav-header">
+        {% include navbar.html %}
+    </nav>
+    <div class="main-header-content">
+        {% if include.logo %}
+        <img class="logo" src="{{ include.logo }}" height="250">
+        {% endif %}
+        {% if include.title %}<h1>{{  include.title }}</h1>{% endif %}
+        {% if include.subtitle %}
+        <p>{{ include.subtitle }}</p>
+        {% endif %}
+        {% if include.description %}
+        <div> {{ include.description }}</div>
+        {% endif %}
+    </div>
+</header>

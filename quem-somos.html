@@ -1,0 +1,23 @@
+---
+layout: default
+
+---
+
+{%- capture subtitle -%}Sobre  <strong>{{ site.title }}</strong>.{%- endcapture -%}
+{%- capture description -%}
+<br><br><br>
+<div>Nossa missão é Lorem ipsum dolor sit amet.</div>
+<div>
+    <q>
+        E disse-lhes: Ide por todo o mundo, pregai o evangelho a toda criatura.
+    </q>
+</div>
+<p class="text-right"><strong>Marcos 16:15</strong></p>
+{%- endcapture -%}
+
+{%  include header.html 
+    background_image="/assets/img/oracao.jpg"
+    title="Quem Somos?"
+    subtitle=subtitle
+    description=description
+%}

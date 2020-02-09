@@ -3,16 +3,12 @@ layout: default
 
 ---
 
-
-<header class="main-header">
-    <nav class="nav-header">
-        {% include navbar.html %}
-    </nav>
-    <div class="main-header-content">
-        <img class="logo" src="/assets/img/logo.png" height="250">
-        <p><strong>Seu lugar de encontro com Deus</strong></p>
-    </div>
-</header>
+{%  include header.html 
+    logo="/assets/img/logo.png" 
+    background_image="/assets/img/adoracao.jpg"
+    title=site.title
+    subtitle="Seu lugar de encontro com deus"
+%}
 
 <section class="section">
     <div class="container text-center">
