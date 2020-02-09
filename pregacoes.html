@@ -8,7 +8,15 @@ permalink: /pregacoes
 
 <section class="section">
     <div class="container text-center">
-        <h2>A {{ site.title | upcase }} LOREM IPSUM</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Debitis sapiente velit vitae quaerat voluptatum<br> maxime fugiat totam nostrum quidem ducimus?</p>
+        <h2>OUÇA A PALAVRA DE DEUS</h2>
+        <div class="row center-xs ">
+            {% for video in site.data.videos %}
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="video">
+                    <iframe src="{{ video.link }}?showinfo=0" allowfullscreen frameborder="0" height="250"></iframe>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>
