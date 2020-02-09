@@ -1,6 +1,7 @@
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/quem-somos">Quem somos</a></li>
-
-    <li><a href="/pregacoes">Pregações</a></li>
-</ul>
+<nav class="nav-header {% if include.is_dark %}is-dark{% endif %} ">
+    <ul class="container">
+        {% for item in site.data.menu_itens %}
+            <li><a href="{{ item.permalink }}" class="{% if item.permalink == page.permalink %}is-active{% endif %}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>
