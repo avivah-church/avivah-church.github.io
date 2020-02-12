@@ -1,0 +1,34 @@
+@import "variables";
+.card-post{
+    box-shadow: 0 5px 10px rgba($color-primary, .3);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-height: 100%;
+
+    .card-post-title{
+        font-size: 1.2em;
+        font-weight: normal;
+        width: 100%;
+        margin: 0;
+        padding: 1rem;  
+    }
+
+    .card-post-image{
+        height: 200px;
+        display: block;
+        background-color: $color-primary;
+    }
+
+    .card-post-body{
+        font-size: 0.9rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    .card-post-date{
+        float: right;
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+}

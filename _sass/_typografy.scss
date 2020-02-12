@@ -38,27 +38,3 @@ h4{
 p{
     margin: 10px 0;
 }
-
-
-
-// containers
-
-.container{
-    margin: 0 auto;
-    width: 1000px;
-    max-width: 100%;
-
-    &.is-small{
-        width: 600px;
-    }
-}
-
-
-.section{
-    padding: 3rem 2rem;
-}
-
-
-.img-responsive{
-    max-width: 100%;
-}

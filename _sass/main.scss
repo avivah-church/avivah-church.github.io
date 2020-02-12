@@ -30,13 +30,12 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 
 main{
     flex: 1;
 }
-
-@import "typografy";
 
 .main-header{
     height: 100vh;
@@ -123,3 +122,8 @@ main{
     margin-bottom: 1rem;
 }
 
+
+
+@import "typografy";
+@import "helpers";
+@import "card-post";
