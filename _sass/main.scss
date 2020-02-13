@@ -104,14 +104,21 @@ main{
 
 
     nav.social-networks{
+        ul{
+            display: flex;
+        }
 
         ul > li > a {
-            padding: 0.5rem 0;
             display: inline-flex;
             align-items: center;
+            transition: all 500ms ease;
+
+            &:hover{
+                color: $color-pink;
+            }
 
             .fa{
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     }
@@ -123,7 +130,7 @@ main{
 }
 
 
-
+@import "margins";
 @import "typografy";
 @import "helpers";
 @import "card-post";
