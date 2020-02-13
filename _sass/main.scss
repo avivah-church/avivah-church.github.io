@@ -55,15 +55,18 @@ main{
         text-align: center;
         animation: enter-to-top 1s ease forwards;
         padding: 0 1em;
+        
 
         > p {
             font-size: 1.5rem;
             font-weight: lighter;
             margin: 0;
+            animation: text-color 6s ease infinite alternate;
         }
 
         > h1{
             margin: 0;
+            animation: text-color 6s ease infinite alternate;
         }
     }
 }
@@ -88,9 +91,15 @@ main{
                 display: block;
                 padding: 15px;
                 text-decoration: none;
+                transition: all 500ms ease;
 
                 &.is-active{
                     font-weight: bold;
+                    color: $color-orange;
+                }
+
+                &:hover{
+                    color: $color-pink;
                 }
             }
         }

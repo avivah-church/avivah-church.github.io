@@ -3,6 +3,7 @@ layout: post
 title:  "Livro de Apocalipse"
 date:   2020-02-07 12:34:06 -0300
 categories: teologia biblia
+image: /assets/img/logo.png
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Livro do Profeta Daniel"
 date:   2020-02-07 12:34:06 -0300
 categories: teologia biblia profeta
+image: /assets/img/logo_2.png
 ---
 
 

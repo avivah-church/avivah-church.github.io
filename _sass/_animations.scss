@@ -6,3 +6,10 @@
         transform: translateY(0);
     }
 }
+
+
+@keyframes text-color {
+    to{
+        text-shadow: 0 0 10px $color-pink, 0 0 20px $color-orange;
+    }
+}
