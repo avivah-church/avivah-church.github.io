@@ -25,12 +25,12 @@ permalink: /
         <div class="row">
             {% for post in site.posts %}
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="card-post">
+                <a class="card-post" href="{{ post.url }}">
                     <h3 class="card-post-title">{{ post.title }}</h3>
                     <img class="card-post-image" src="{{ post.image }}">
                     <div class="card-post-body">{{ post.excerpt }}</div>
-                    <div class="card-post-date">{{ post.date }}</div>
-                </div>
+                    <div class="card-post-date">{{ post.date |  date: "%d/%m/%Y" }}</div>
+                </a>
             </div>
             {% endfor %}
         </div>

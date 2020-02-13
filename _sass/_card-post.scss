@@ -18,17 +18,20 @@
         height: 200px;
         display: block;
         background-color: $color-primary;
+        object-fit: cover;
     }
 
     .card-post-body{
         font-size: 0.9rem;
         text-align: justify;
         padding: 1rem;
+        flex: 1;
     }
 
     .card-post-date{
-        float: right;
         font-size: 0.7rem;
         padding: 1rem;
+        color: $color-grey;
+        text-align: right;
     }
 }

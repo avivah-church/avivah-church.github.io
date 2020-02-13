@@ -95,10 +95,11 @@ main{
 
                 &.is-active{
                     font-weight: bold;
+                    // color: $color-grey;
                 }
 
                 &:hover{
-                    color: $color-pink;
+                    background-color: transparentize($color-light, 0.9);
                 }
             }
         }
