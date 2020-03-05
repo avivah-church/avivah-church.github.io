@@ -30,13 +30,12 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 
 main{
     flex: 1;
 }
-
-@import "typografy";
 
 .main-header{
     height: 100vh;
@@ -56,15 +55,18 @@ main{
         text-align: center;
         animation: enter-to-top 1s ease forwards;
         padding: 0 1em;
+        
 
         > p {
             font-size: 1.5rem;
             font-weight: lighter;
             margin: 0;
+            animation: text-color 6s ease infinite alternate;
         }
 
         > h1{
             margin: 0;
+            animation: text-color 6s ease infinite alternate;
         }
     }
 }
@@ -89,9 +91,15 @@ main{
                 display: block;
                 padding: 15px;
                 text-decoration: none;
+                transition: all 500ms ease;
 
                 &.is-active{
                     font-weight: bold;
+                    // color: $color-grey;
+                }
+
+                &:hover{
+                    background-color: transparentize($color-light, 0.9);
                 }
             }
         }
@@ -105,14 +113,21 @@ main{
 
 
     nav.social-networks{
+        ul{
+            display: flex;
+        }
 
         ul > li > a {
-            padding: 0.5rem 0;
             display: inline-flex;
             align-items: center;
+            transition: all 500ms ease;
+
+            &:hover{
+                color: $color-pink;
+            }
 
             .fa{
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     }
@@ -123,3 +138,8 @@ main{
     margin-bottom: 1rem;
 }
 
+
+@import "margins";
+@import "typografy";
+@import "helpers";
+@import "card-post";

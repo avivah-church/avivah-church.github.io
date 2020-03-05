@@ -19,9 +19,29 @@ permalink: /
     </div>
 </section>
 
+<section class="section is-dark">
+    <div class="container">
+        <h2 class='text-center'>ARTIGOS</h2>
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="card-post" href="{{ post.url }}">
+                    <h3 class="card-post-title">{{ post.title }}</h3>
+                    <img class="card-post-image" src="{{ post.image }}">
+                    <div class="card-post-body">{{ post.excerpt }}</div>
+                    <div class="card-post-date">{{ post.date |  date: "%d/%m/%Y" }}</div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <section class="section">
     <div class="container is-small text-center">
         <h2>CONTATO</h2>
         <p>Entre em contato conosco através do e-mail {{ site.email }}</p>
     </div>
 </section>
+
+

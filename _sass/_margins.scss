@@ -1,0 +1,13 @@
+$margins: ("m" : "margin", "mt": "margin-top", "mb" : "margin-bottom", "ml" : "margin-left", "mr" : "margin-right");
+
+@for $i from 0 through 5 {
+
+    $value: #{$i * 0.4}rem;
+
+
+    @each $k, $v in $margins {
+        .#{$k}-#{$i}{ 
+            #{$v}: #{$value};
+        }
+    }
+}

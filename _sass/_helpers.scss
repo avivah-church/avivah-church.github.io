@@ -1,0 +1,21 @@
+@import "variables";
+
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+
+    &.is-small{
+        width: 600px;
+    }
+}
+
+.section{
+    padding: 3rem 2rem;
+}
+
+
+.img-responsive{
+    max-width: 100%;
+}
+
