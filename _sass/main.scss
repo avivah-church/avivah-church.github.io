@@ -62,8 +62,8 @@ main{
 }
 
 .nav-header{
+    
     display: flex;
-    justify-content: flex-end;
 
     &.is-dark{
         background-color: $color-primary;
@@ -72,7 +72,11 @@ main{
     ul{
         list-style: none;
         display: flex;
-        justify-content: flex-end;
+        // justify-content: flex-end;
+
+        // @media (max-width: $device-sm) {
+        //     justify-content: center;
+        // }
         
         > li {
 
@@ -157,5 +161,60 @@ main{
         margin-right: 1.5rem; 
         margin-bottom: 1rem;
         margin-top: .5rem;
+    }
+}
+
+
+
+.carousel{
+
+    height: 100vh;
+    background-color: $color-light;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .carousel-control
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        display: block;
+        z-index: 5;
+        // text-shadow: 0 0 10px $color-dark-grey;
+        color: transparentize($color-orange, .5);
+
+        &.right{
+            right: 0;
+        }
+        
+        &.left{
+            left: 0;
+        }
+    }
+
+    .carousel-wrapper{
+        display: flex;
+        height: 100%;
+        transition: all 600ms ease;
+        will-change: transform;
+        position: relative;
+        user-select: none;
+    
+        .carousel-item{
+            flex: 0 0 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            min-height: 100%;
+            // opacity: 0.3;
+            transition: opacity 500ms ease;
+    
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
 }

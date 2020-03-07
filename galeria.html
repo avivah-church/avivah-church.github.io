@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /galeria
+
+---
+{%  include navbar.html is_dark=true %}
+<section class='mt-5'>
+    <h1 class='text-center mb-5'>GALERIA</h1>
+    <div class="carousel">
+        <a class="carousel-control left">
+            <i class="fa fa-chevron-left fa-3x"></i>
+        </a>
+        <a class="carousel-control right">
+            <i class="fa fa-chevron-right fa-3x"></i>
+        </a>
+        <div class="carousel-wrapper">
+            {%- for item in site.data.carousel -%}
+                <div class="carousel-item" style="background-image: url('/assets/img/{{ item.image }}')"></div>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
