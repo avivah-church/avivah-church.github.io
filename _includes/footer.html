@@ -1,35 +1,46 @@
 <footer class="footer">
-    <div class="section">
+    <div class="section social-networks">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/avivahchurch/" title="Nosso Instagram" rel="nofollow">
+                    <i class="fa fa-instagram fa-fw"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/avivahchurch/" title="Nosso Facebook" rel="nofollow">
+                    <i class="fa fa-facebook-official fa-fw"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCw21HECH5iQQlXXa0MutDsA" title="Nosso canal no Youtube" rel="nofollow">
+                    <i class="fa fa-youtube-play fa-fw"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="section contacts">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <nav class="social-networks mb-5">
-                        <h4>Redes Sociais</h4>
-                        <ul>
-                            <li>
-                                <a href="https://www.instagram.com/avivahchurch/" title="Nosso Instagram" rel="nofollow">
-                                    <i class="fa fa-instagram fa-fw"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/avivahchurch/" title="Nosso Facebook" rel="nofollow">
-                                    <i class="fa fa-facebook-official fa-fw"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCw21HECH5iQQlXXa0MutDsA" title="Nosso canal no Youtube" rel="nofollow">
-                                    <i class="fa fa-youtube-play fa-fw"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="row center-xs" >
+                <div class="col-xs-12 col-sm-4">
+                    <h4><i class="fa fa-map-marker fa-lg"></i> Endereço</h4>
+                    <p>Rua Prefeito Olivio de Matos - 546<br> Bairro Fragoso - Piabetá, Rio De Janeiro. <br>CEP: 25903-587</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <h4>Endereço</h4>
-                    <p>Rua Prefeito Olivio de Matos - 546 - Bairro Fragoso<br>Piabetá, Rio De Janeiro. </p>
-                    <p>CEP: 25903-587</p>
+    
+                <div class="col-xs-12 col-sm-3">
+                    <h4><i class="fa fa-mobile fa-lg"></i> Telefone</h4>
+                    <p>{{ site.phone }}</p>
+                </div>
+    
+                <div class="col-xs-12 col-sm-3">
+                    <h4> <i class="fa fa-envelope fa-lg"></i> E-mail</h4>
+                    <p>{{ site.email }}</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="copyright section">
+        <div class="container text-right">
+            &copy; {{ "now" | date: "%Y" }} - {{ site.title }}  
         </div>
     </div>
 </footer>

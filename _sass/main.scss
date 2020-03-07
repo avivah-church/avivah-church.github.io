@@ -1,6 +1,10 @@
 @import "variables";
 @import "animations";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import "margins";
+@import "typografy";
+@import "helpers";
+@import "card-post";
 
 
 *, *::after, *::before{
@@ -107,29 +111,46 @@ main{
 }
 
 .footer{
-    background-color: $color-primary;
-    color: $color-light;
-    
 
-
-    nav.social-networks{
+    .social-networks{
+        background-color: $color-light;
         ul{
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            margin: 0 auto;
+            max-width: 100%;
         }
 
         ul > li > a {
+            color: $color-grey;
             display: inline-flex;
             align-items: center;
             transition: all 500ms ease;
 
             &:hover{
                 color: $color-pink;
+                transform: scale(1.1);
             }
 
             .fa{
-                font-size: 2rem;
+                font-size: 3rem;
             }
         }
+    }
+
+    .contacts{
+        background-color: darken($color-light, 10);
+        color: $color-grey;
+        h4{
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .copyright{
+        background-color: $color-primary;
+        color: $color-light;
     }
 }
 
@@ -139,7 +160,16 @@ main{
 }
 
 
-@import "margins";
-@import "typografy";
-@import "helpers";
-@import "card-post";
+
+#historia-texto{
+    line-height: 1.8;
+    color: $color-dark-grey;
+
+    img{
+        float: left; 
+        height: 350px;
+        margin-right: 1.5rem; 
+        margin-bottom: 1rem;
+        margin-top: .5rem;
+    }
+}
