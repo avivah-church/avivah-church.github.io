@@ -1,5 +1,5 @@
 [
     {"title" : "Início", "permalink" : "/"},
-    {"title" : "Quem Somos", "permalink" : "/quem-somos"},
-    {"title" : "Pregações", "permalink" : "/pregacoes"}
+    {"title" : "Contato", "permalink" : "#contato"},
+    {"title" : "Quem Somos", "permalink" : "/quem-somos"}
 ]
