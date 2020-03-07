@@ -151,9 +151,10 @@ main{
 
 
 
-#historia-texto{
+.about-text{
     line-height: 1.8;
     color: $color-dark-grey;
+    text-align: justify;
 
     img{
         float: left; 
