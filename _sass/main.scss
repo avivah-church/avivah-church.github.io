@@ -1,36 +1,21 @@
 @import "variables";
-@import "animations";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+@import "resets";
+@import "animations";
 @import "margins";
 @import "typografy";
 @import "helpers";
 @import "card-post";
 
-
-*, *::after, *::before{
-    box-sizing: border-box;   
-}
-
-ul{
-    padding: 0; 
-    list-style: none;
-    margin: 0;
-}
-
-a{
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-}
-
 html{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body{
-    padding: 0;
-    margin: 0;
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
