@@ -22,14 +22,24 @@
 
 .blog-post{
 
-    blockquote{
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 5px 5px $color-grey;
+    line-height: 1.65;
+
+    blockquote {
+        background-color: lighten($color-pink, 50);
+        border-left: 1rem solid $color-pink ;
+        color: $color-grey;
         font-style:italic;
-        color: #555555;
-        border-left:8px solid #78C0A8 ;
-        line-height:1.6;
-        position: relative;
-        background:#EDEDED;
-        margin-left: 3rem;
+        line-height:1.4;
+        margin: 1rem 3rem;
         padding: 1rem 2rem;
-      }
+        position: relative;
+
+        @media (max-width: $device-sm) {
+            margin-left: 0;;
+            margin-right: 0;
+        }   
+    }
 }
