@@ -2,7 +2,9 @@
 layout: post
 title: COVID-19
 date: 2020-02-07T15:34:06.000+00:00
-categories: teologia biblia profeta
+categories:
+- covid-19
+- coronavirus
 image: "/assets/img/logo_2.png"
 
 ---
