@@ -27,7 +27,7 @@ fields:
     time_format: 
     display_utc: false
   label: Data do artigo
-  hidden: true
+  hidden: false
   description: 'Insira uma data para esse arquivo. '
   default: now
 - name: layout
@@ -43,7 +43,7 @@ fields:
   config:
     required: false
   label: 'Autor '
-  hidden: true
+  hidden: false
   default: Pra. Luciene Nascimento
 pages:
 - _posts/2020-02-07-covid-19.md
