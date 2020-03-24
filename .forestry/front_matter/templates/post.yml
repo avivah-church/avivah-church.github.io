@@ -2,25 +2,18 @@
 label: post
 hide_body: false
 fields:
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: image
-  description: A capa da publicação
-- name: layout
-  type: text
-  config:
-    required: false
-  hidden: true
-  label: layout
-  description: Layout padrão da publicação. Não altere
 - name: title
   type: text
   config:
     required: false
   label: Título
   description: O título da publicação
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: image
+  description: A capa da publicação
 - name: categories
   type: tag_list
   default: []
@@ -36,3 +29,10 @@ fields:
   label: Data do artigo
   hidden: true
   description: 'Insira uma data para esse arquivo. '
+- name: layout
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: layout
+  description: Layout padrão da publicação. Não altere
