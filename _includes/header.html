@@ -1,4 +1,4 @@
-<header class="main-header" style='background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{ include.background_image }}")'>
+<header class="main-header {{ include.class }}" style='background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{ include.background_image }}")'>
     {% include navbar.html %}
     <div class="main-header-content">
         {% if include.logo %}

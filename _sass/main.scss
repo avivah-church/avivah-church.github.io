@@ -36,9 +36,12 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     display: flex;
     flex-direction: column;
+
+    &.is-small{
+        height: 500px;
+    }
 
     .main-header-content{
         flex: 1;
