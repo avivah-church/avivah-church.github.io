@@ -1,10 +1,10 @@
 ---
 label: post
-hide_body: true
+hide_body: false
 fields:
 - name: image
   type: file
   config:
     maxSize: 250
   label: image
-  description: capa da publicação
+  description: A capa da publicação
