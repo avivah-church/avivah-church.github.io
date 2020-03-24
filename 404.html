@@ -2,8 +2,9 @@
 layout: default
 ---
 
+
 <style type="text/css" media="screen">
-  .container {
+  .container.not-found {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
@@ -16,7 +17,9 @@ layout: default
   }
 </style>
 
-<div class="container">
+{%  include navbar.html is_dark=true %}
+
+<div class="container not-found">
   <h1>404</h1>
 
   <p><strong>Page not found :(</strong></p>
