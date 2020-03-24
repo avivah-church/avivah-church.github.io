@@ -1,0 +1,44 @@
+@import "variables";
+
+.blog-cover-image{
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    .blog-cover-overlay{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .7);
+        color: $color-light;
+
+        > h1 {
+            text-shadow: 0 0 10px $color-pink, 0 0 20px $color-orange;
+        }
+    }
+}
+
+
+.blog-post{
+
+    blockquote{
+        font-style:italic;
+        color: #555555;
+        padding:1.2em 30px 1.2em 75px;
+        border-left:8px solid #78C0A8 ;
+        line-height:1.6;
+        position: relative;
+        background:#EDEDED;
+      }
+      
+      blockquote::before{
+        font-family:Arial;
+        content: "\201C";
+        color:#78C0A8;
+        font-size:4em;
+        position: absolute;
+        left: 10px;
+        top:-10px;
+      }
+}
