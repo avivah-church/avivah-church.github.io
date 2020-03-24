@@ -41,7 +41,7 @@ fields:
 - name: author
   type: text
   config:
-    required: false
+    required: true
   label: 'Autor '
   hidden: false
   default: Pra. Luciene Nascimento
