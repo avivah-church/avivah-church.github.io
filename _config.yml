@@ -18,8 +18,8 @@ email:  avivahchurch@gmail.com
 phone: +55 (21) 98914-5732
 description: >- # this means to ignore newlines until "baseurl:"
   Seu lugar de encontro com Deus
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://avivahchurch.org.br/" 
+baseurl: ""
 
 # Build settings
 markdown: kramdown
