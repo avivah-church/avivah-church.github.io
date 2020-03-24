@@ -1,4 +1,10 @@
 ---
 label: post
 hide_body: true
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: image
+  description: capa da publicação
