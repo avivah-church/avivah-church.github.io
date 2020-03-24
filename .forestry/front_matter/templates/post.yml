@@ -29,12 +29,21 @@ fields:
   label: Data do artigo
   hidden: true
   description: 'Insira uma data para esse arquivo. '
+  default: now
 - name: layout
   type: text
   config:
-    required: false
+    required: true
   hidden: true
   label: layout
   description: Layout padrão da publicação. Não altere
+  default: post
+- name: author
+  type: text
+  config:
+    required: false
+  label: 'Autor '
+  hidden: true
+  default: Pra. Luciene Nascimento
 pages:
 - _posts/2020-02-07-covid-19.md
