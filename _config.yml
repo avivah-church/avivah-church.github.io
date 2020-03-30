@@ -20,6 +20,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Seu lugar de encontro com Deus
 url: "http://avivahchurch.org.br" 
 baseurl: ""
+cnpj: "32.682.418/0001-12"
+
 
 # Build settings
 markdown: kramdown

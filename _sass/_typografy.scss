@@ -9,21 +9,44 @@
     }
 }
 
+.text-italic{
+    font-style: italic;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+$colors: (
+    "primary": $color-primary, 
+    "light" : $color-light, 
+    "pink" : $color-pink, 
+    "orange" : $color-orange,
+    "grey" : $color-grey,
+    "purple" : $color-purple
+);
+
+@each $name, $color in $colors {
+    .text-color-#{$name}{
+        color: $color;
+    }
+}
+
 // globals
 
-h1{
+h1, .h1{
     font-size: 2.5rem;
 }
 
-h2{
+h2, .h2{
     font-size: 2rem;
 }
 
-h3{
+h3, .h3{
     font-size: 1.8rem;
 }
 
-h4{
+h4, .h4{
     font-size: 1.2rem;
 }
 

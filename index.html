@@ -12,9 +12,22 @@ permalink: /
 %}
 
 <section class="section">
-    <div class="container text-center">
-        <h2>A {{ site.title }} <br>tem uma missão </h2>
-        <p>Pregação do Evangelho de Jesus Cristo e busca das almas perdidas.<br>Queremos ganhar almas para o Reino de Deus.</p>
+    <div class="container text-center is-small">
+        <h2>UMA GRANDE FAMÍLIA </h2>
+        <i>
+            <p>Igreja é um edifício construído com blocos e cimento? Não.<br>
+            É um edifício construído com pedras vivas. </p>
+            <p>
+                 <q>Também vós mesmos, como pedras que vivem, sois edificados casa espiritual para serdes sacerdócio santo, a fim de oferecerdes sacrifícios espirituais agradáveis a Deus por intermédio de Jesus Cristo” (1 Pedro 2:5).
+                </q>
+            </p>
+            <p>Estas pedras vivas são chamadas santos e são membros da família de Deus:<br>
+                <q>
+                    Assim, já não sois estrangeiros e peregrinos, mas concidadãos dos santos, e sois da família de Deus, edificados sobre o fundamento dos apóstolos e profetas, sendo ele mesmo, Cristo Jesus, a pedra angular; no qual todo o edifício, bem ajustado, cresce para santuário dedicado ao Senhor, no qual também vós juntamente estais sendo edificados para habitação de Deus no Espírito
+                </q> 
+                (Efésios 2:19-22).
+            </p>
+        </i>
     </div>
 </section>
 
@@ -36,3 +49,60 @@ permalink: /
         </div>
     </div>
 </section> 
+
+<section class="section">
+    <div class="container text-center">
+        <h2 class='text-center mb-4'>CULTOS E EVENTOS</h2>
+        <div class="row center-xs">
+            {% for event in site.data.events %}
+            <div class="col-xs-12 col-md-4">
+                <div class="event-box">
+                    <h3>{{ event.weekday }}</h3>
+                    <p class="event-box-description">{{ event.description }}</p>
+                    <p class="event-box-time">{{ event.schedule }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container text-center is-small">
+        <h2>AJUDE A OBRA</h2>
+        <img src="/assets/img/doar.gif" alt="Doação" title="Doação" height="120" class="mb-3 mt-3">
+        <div class="text-color-grey h4">
+            <p class="text-italic">
+                <q>Deem e será dado a vocês: uma boa medida, calcada, sacudida e transbordante será dada a vocês. Pois a medida que usarem também será usada para medir vocês</q>
+            </p>
+            <p class="text-bold">Lucas 6:38</p>
+        </div>
+        <div class="mt-5 text-color-grey">
+            <h4 class="mb-3">Faça um depósito e ajude a obra de Deus</h4>
+            <div class="event-box" id="conta-deposito">
+                <table class="table-dd">
+                    <tr>
+                        <th>Banco:</th>
+                        <td>Bradesco</td>
+                    </tr>
+                    <tr>
+                        <th>Agência:</th>
+                        <td>7028-9</td>
+                    </tr>
+                    <tr>
+                        <th>Conta Corrente</th>
+                        <td>0015487-3</td>
+                    </tr>
+                    <tr>
+                        <th>CNPJ:</th>
+                        <td>{{ site.cnpj }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+

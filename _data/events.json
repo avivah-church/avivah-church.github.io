@@ -1,0 +1,32 @@
+[
+    {
+        "weekday" : "Terças-feiras",
+        "description" : "REUNIÃO DOS JOVENS",
+        "schedule" : "19 Hrs"
+    },
+    {
+        "weekday" : "Quartas-feiras",
+        "description" : "CULTO INTIMIDADE",
+        "schedule" : "9 Hrs / 15 Hrs / 19 Hrs"
+    },
+    {
+        "weekday" : "Quintas-feiras",
+        "description" : "INTERCESSÃO",
+        "schedule" : "19 Hrs"
+    },
+    {
+        "weekday" : "Sextas-feiras",
+        "description" : "CULTO LIBERTA-SE",
+        "schedule" : "9 Hrs / 15 Hrs / 19 Hrs"
+    },
+    {
+        "weekday" : "Sábados",
+        "description" : "EVANGELISMO",
+        "schedule" : " 9:30 Hrs"
+    },
+    {
+        "weekday" : "Domingo",
+        "description" : "CULTO DA FAMÍLIA",
+        "schedule" : "8 Hrs / 15 Hrs / 18 Hrs"
+    }
+]
