@@ -1,0 +1,51 @@
+---
+layout: default
+sitemap: true
+---
+
+{%- capture subtitle -%}
+<q>Atenta para o ministério que recebeste no Senhor, para que o cumpras.</q>
+{%- endcapture -%}
+
+
+{%  include header.html 
+    background_image="/assets/img/adoracao.jpg"
+    title="Nossos Ministérios"
+    subtitle=subtitle
+    description="(Colossenses 4:17)"
+%}
+
+<section class="section">
+    <div class="container is-small">
+        <h2>Ministérios</h2>
+        <p>Devemos ter essa definição sempre em mente, principalmente em relação ao fato de ser uma “execução de tarefa”, pois é isso que temos relacionado a palavra em toda Bíblia e com a vinda de Jesus para nos salvar.</p>
+        
+        <p>
+            <q>Se alguém falar, fale segundo as palavras de Deus; se alguém administrar, administre segundo o poder que Deus dá</q>
+            <br>(1 Pedro 4:11)
+        </p>
+        
+       <p>
+            <q>Ora, tinha Jesus cerca de trinta anos ao começar o seu ministério…</q>
+            <br>(Lucas 3:23)
+       </p>
+
+       <p>
+        Como vemos nessa passagem, Jesus tinha o seu próprio ministério que deve ser o nosso modelo maior, assim como tudo o que ele fez em sua vida, deve ser nosso espelho. Se focarmos no ministério de Jesus, podemos fazer o nosso próprio ser bom, já que se apenas vermos o nosso poderemos ficar cada vez mais distante do que seria ideia para Deus.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        {% for ministry in site.data.ministries %}
+        <div class="ministry">
+            <div class="ministry-image" style='background-image: url("/assets/img/ministerios/{{ ministry.image }}")'></div>
+            <div class='ministry-text'>
+                <h4>{{ ministry.title }}</h4>
+                <p>{{ ministry.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+

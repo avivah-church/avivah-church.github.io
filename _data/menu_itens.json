@@ -1,5 +1,6 @@
 [
     {"title" : "Início", "permalink" : "/"},
     {"title" : "Quem Somos", "permalink" : "/quem-somos"},
+    {"title" : "Ministérios", "permalink" : "/ministerios"},
     {"title" : "Contato", "permalink" : "#contato"}
 ]

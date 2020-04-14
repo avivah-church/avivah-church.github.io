@@ -6,7 +6,7 @@
     background-image: linear-gradient(15deg, $color-purple, transparent);
     color: $color-light;
     padding: 1.5rem;
-    height: 18rem;
+    min-height: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +20,12 @@
 
     > h3{
         font-size: 2rem;
+    }
+
+    @media (max-width: 767px) {
+
+        min-height: 12rem;
+        
     }
 
 

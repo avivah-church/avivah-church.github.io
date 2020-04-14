@@ -1,0 +1,35 @@
+[
+    {
+        "image" : "ministerio-infantil.jpg",
+        "title": "Avivah kids",
+        "description" : "O Ministério Infantil é realmente muito especial. É por meio dele que é possível plantar a semente em terra boa, regar com amor e alegria, para colher os melhores frutos no futuro. E todas as crianças são importantes e amadas por Deus, todas têm dons espirituais concedidos pelo Senhor Jesus Cristo. Então, cabe à igreja o papel de ajudá-las na descoberta dos seus dons, dando espaço para que elas os desenvolvam, servindo com alegria."
+    },
+
+    {
+        "image" : "ministerio-evangelismo.jpg",
+        "title" : "Evangelismo",
+        "description": "O ministério de evangelista é dado por Deus à Igreja como um dom valioso. Por isso, o estudaremos procurando vislumbrar como o Senhor Jesus o considerou, e como esse dom ministerial por Deus concedido é tratado em o Novo Testamento, bem como sua destacada operação nas igrejas de Corinto e Éfeso. Temos de Jesus a ordem para pregar o Evangelho, e em sua multiforme sabedoria Deus dispõe para a igreja o poder necessário para proclamar o Evangelho com ousadia.",
+     
+    },
+
+    {
+        "image" : "ministerio-jovens.jpg",
+        "title" : "Jovens Avivah",
+        "description" : "Alcançar o jovem habilitando-o a relacionar-se pessoal   e  intimamente com Deus, crescer na fé, viver em adoração e serviço e desenvolver relacionamentos maduros.Encorajando o jovem a desenvolver um compromisso com Deus e com sua Palavra proporcionando um ambiente acolhedor para todos os jovens estimulando o jovem a desenvolver relacionamentos sadios e maduros e levando o jovem a testemunhar de Jesus com palavras e com seu exemplo de vida;"
+    },
+    {
+        "image" : "ministerio-casal.jpg",
+        "title" : "Ministério de Casais",
+        "description" : "O Ministério de Casais tem como alvo exaltar a Deus por meio do casamento, instituído por Ele, ajudando os casais a conhecerem os princípios da Palavra e, desta forma, crescerem espiritualmente, levando-os a cuidarem de outros, conforme os propósitos eternos.\nO ministério estuda os princípios das Escrituras Sagradas de forma descontraída, porém compromissada. Durante as reuniões, os casais compartilham, oram e procuram descobrir os propósitos de Deus para seus relacionamentos"
+    },
+    {
+        "image" : "ministerio-mulheres.jpg",
+        "title" : "Ministério de mulheres",
+        "description" : "O Ministério de Mulheres é voltado, principalmente, para atender as necessidades da mulher da Igreja e da comunidade, de um modo integral nas quatro áreas da vida: física, mental, social e espiritual.\nO propósito do nosso Ministério é servir a Deus, promovendo comunhão, integração, ação social e evangelização."
+    },
+    {
+        "image" : "ministerio-avivah-vidas.jpg",
+        "title" : "Avivah Vidas",
+        "description" : "“Ouvi esta palavra vós, vacas de Basã, que estais no monte de Samaria, que oprimis aos pobres, que esmagais os necessitados, que dizeis a vossos senhores: Dai cá, e bebamos. Jurou o Senhor Deus, pela sua santidade, que dias estão para vir sobre vós, em que vos levarão com ganchos e a vossos descendentes com anzóis de pesca. E saireis pelas brechas, uma após outra, e sereis lançadas para Hermom, disse o Senhor” (Amós 4.1-3)"
+    }
+]
