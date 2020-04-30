@@ -1,7 +1,14 @@
 <nav class="nav-header {% if include.is_dark %}is-dark{% endif %} ">
-    <ul class="container center-xs end-sm">
-        {% for item in site.data.menu_itens %}
-            <li><a href="{{ item.permalink }}" class="{% if item.permalink == page.permalink %}is-active{% endif %}">{{ item.title }}</a></li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        {% if include.show_logo %}
+            <a href="/" class="logo">
+                <img src="/assets/img/avivah-church.png" height="40">
+            </a>
+        {% endif %}
+        <ul class="center-xs end-sm">
+            {% for item in site.data.menu_itens %}
+                <li><a href="{{ item.permalink }}" class="{% if item.permalink == page.permalink %}is-active{% endif %}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 </nav>

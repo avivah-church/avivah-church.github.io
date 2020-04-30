@@ -1,23 +1,36 @@
 ---
 layout: default
-title: Pregações
 permalink: /pregacoes
-sitemap: false
+sitemap: true
+scripts: 
+    - /assets/js/youtube.js
+
 ---
 
-{%  include navbar.html is_dark=true %}
+{%  include navbar.html is_dark=true show_logo=true %}
+
+
+<div class="section">
+
+    <div class="container text-center">
+        <h1 class="mb-5">Ouça a Palavra de Deus</h1>
+        <iframe class="youtube-iframe" id="youtube-iframe" width="560" height="315" src="https://www.youtube.com/embed/SVbgPVf2CGk?autoplay=0&showinfo=0&controls=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 <section class="section">
-    <div class="container text-center">
-        <h2>OUÇA A PALAVRA DE DEUS</h2>
-        <div class="row center-xs ">
-            {% for video in site.data.videos %}
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="video">
-                    <iframe class="img-responsive" src="{{ video.link }}?showinfo=0" allowfullscreen frameborder="0" height="250" width="100%"></iframe>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+    <div class="container">
+        <div id="youtube-container" class="row"></div>
+    </div>
+</section>
+
+<section class="section">
+    <div class='container is-small text-center'>
+        <h2 class="text-center">Assista nossos cultos online!</h2>
+        <p >Não é inscrito no nosso canal no Youtube?<br>Então clique no link abaixo e inscreva-se para acompanhar os cultos da Avivah ao vivo!</p>
+
+        <a href="https://www.youtube.com/channel/UCw21HECH5iQQlXXa0MutDsA" class="text-color-pink">
+            <i class="fa fa-youtube-play fa-5x"></i>
+        </a>
     </div>
 </section>

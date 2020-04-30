@@ -84,10 +84,16 @@ main{
         background-color: $color-primary;
     }
 
+    > .container{
+        display: flex;
+        align-items: center;
+    }
+
     ul{
         list-style: none;
         display: flex;
-        // justify-content: flex-end;
+        justify-content: flex-end;
+        margin-left: auto;
 
         // @media (max-width: $device-sm) {
         //     justify-content: center;
@@ -317,4 +323,73 @@ main{
     }
 
 
+}
+
+
+.youtube-item{
+    margin-bottom: 1rem;
+    height: 200px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://img.youtube.com/vi/SVbgPVf2CGk/hqdefault.jpg");
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    border-radius: 4px;
+
+    position: relative;
+    z-index: 1;
+    transition: all 650ms ease;
+
+    cursor: pointer;
+
+    &::after{
+        content: '';
+        background-color: transparentize($color-purple, .5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: inherit;
+    }
+
+
+    > h4{
+        margin: 0;
+        text-align: center;
+        font-weight: lighter;
+        background-color: rgba(0, 0, 0, .8);
+        background-image: linear-gradient(to right, transparentize($color-purple, .6), transparentize($color-pink, .6));
+        width: 100%;
+        color: $color-light;
+        padding: 1rem;
+        position: relative;
+        z-index: 2;
+        transition: inherit;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        &::after{
+            background-color: transparentize($color-purple, .8);
+        }
+        h4 {
+            background-color: #000;
+        }
+    }
+}
+
+
+.youtube-iframe{
+    width: 650px;
+    height: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
 }
