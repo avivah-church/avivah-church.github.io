@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
             channelId: 'UCw21HECH5iQQlXXa0MutDsA',
             order: 'date',
             part: 'snippet,id',
-            type: 'video'   
+            type: 'video',
+            maxResults: 48
         }
     }).then(function (response) {
 
